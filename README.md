@@ -30,4 +30,4 @@ npm run build --report
 
 由于app使用的是qq音乐的api，qq音乐的api有经常改，所以无法播放音乐
 
-[地址](https://sanfengliao.github.io/vue-music-demo/)
+[地址](http://47.100.108.131:3002)
