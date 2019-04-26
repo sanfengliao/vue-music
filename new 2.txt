@@ -1,0 +1,35 @@
+4.4 轮播图组件的开发
+	Slider 
+	slot插槽
+	Slider prop属性
+		loop Boolean
+		autoPlay Boolean
+		interval: Number, 4000
+	使用better-scroll
+	在mouted方法中初始化better-scroll
+	初始化slider的宽度
+	在common js 中添加dom.js 来用作的dom的操作
+4.7 
+	获取歌单信息
+	服务端使用axios获取数据
+
+4.10： 抽象出scroll组件
+4.11： scroll组件的注意事项
+4.12： lazy-load使用
+4.13： loading组件编写
+
+5.1  singer.js 获取歌手详情
+	 获取数据
+	 规范数据
+	 图像地址的获取
+	 热门歌手
+	 抽象出Singer类
+	 处理map
+	 
+* 开发ListView组件
+	prop: 
+		data Array
+	
+	开发右侧列表
+		scroll.vue扩展发方法 scrollTo(), scrollToElement()
+* 对scroll拓展，监听滚动事件
