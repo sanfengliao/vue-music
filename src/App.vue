@@ -21,10 +21,10 @@ export default {
     player
   },
   created() {
-    getMusicInfo().then((data) => {
-      let musicData = {key: data.k, prefix: data.fix[0], subfix: data.fix[1]}
-      this.$store.dispatch('setMusicInfo', musicData)
-    })
+    // getMusicInfo().then((data) => {
+    //   let musicData = {key: data.k, prefix: data.fix[0], subfix: data.fix[1]}
+    //   this.$store.dispatch('setMusicInfo', musicData)
+    // })
   }
 }
 </script>

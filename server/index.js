@@ -1,20 +1,20 @@
-const cp = require('child_process')
-const {resolve} = require('path')
+//const cp = require('child_process')
+//const {resolve} = require('path')
 const rp = require('request-promise-native')
 const Koa = require('koa')
 const Router = require('koa-router')
 const app = new Koa()
 let data = {}
-const child = cp.fork(resolve(__dirname, './crawler/music-crawl.js'))
-child.on('message', (msg) => {
-  data = msg
-})
+//const child = cp.fork(resolve(__dirname, './crawler/music-crawl.js'))
+// child.on('message', (msg) => {
+//   data = msg
+// })
 
 const router = new Router()
-router.get('/api/music-info', async (ctx, next) => {
-  ctx.response.set('Access-Control-Allow-Origin', '*')
-  ctx.body = data
-})
+// router.get('/api/music-info', async (ctx, next) => {
+//   ctx.response.set('Access-Control-Allow-Origin', '*')
+//   ctx.body = data
+// })
 
 router.get('/api/lyric', async (ctx, next) => {
   let data = await rp.get('https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg', {
