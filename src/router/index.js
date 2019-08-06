@@ -12,11 +12,12 @@ import Desc from "../components/desc/desc.vue"
 Vue.use(Router)
 
 export default new Router({
+    mode: 'history',
     routes:[
         {
             path:"/",
             redirect: "/recommend",
-           
+
         },
         {
             path:"/rank",

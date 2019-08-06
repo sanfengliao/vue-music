@@ -33,6 +33,9 @@
         mounted() {
             this._initBSCroll();
         },
+        updated() {
+          this.BSCroll.refresh()
+        },
         methods:{
             _initBSCroll() {
                 this.BSCroll = new BSCroll(this.$refs.wrapper, {
@@ -69,14 +72,6 @@
             },
             scroll() {
 
-            }
-        },
-        watch: {
-            data(){
-                this.BSCroll.refresh();
-                setTimeout(() => {
-                    this.refresh();
-                }, 200);
             }
         }
     }

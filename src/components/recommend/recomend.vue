@@ -25,7 +25,7 @@
                         </li>
                     </ul>
                 </div>
-            </div> 
+            </div>
             <div class="loading-container" v-show="!descList.length">
                 <loading></loading>
             </div>
@@ -41,7 +41,7 @@
     import {getRecommend, getDescList} from '../../api/getRecomend.js';
     import {ERR_OK} from "../../api/config.js";
 import { mapMutations } from 'vuex';
-   
+
     export default {
         data() {
             return {
@@ -86,7 +86,7 @@ import { mapMutations } from 'vuex';
 </script>
 
 <style lang="stylus" scoped>
-    @import "~common/stylus/variable"
+  @import "~common/stylus/variable"
 
   .recommend
     position: fixed
