@@ -23,12 +23,12 @@ export default new Router({
     mode: 'history',
     routes:[
         {
-            path:"/",
-            redirect: "/recommend",
+            path:"/music",
+            redirect: "/music/recommend",
 
         },
         {
-            path:"/rank",
+            path:"/music/rank",
             component: Rank,
             children:[
                 {
@@ -38,7 +38,7 @@ export default new Router({
             ]
         },
         {
-            path:"/singer",
+            path:"/music/singer",
             component:Singer,
             children:[
                 {
@@ -48,7 +48,7 @@ export default new Router({
             ]
         },
         {
-            path:"/search",
+            path:"/music/search",
             component:Search,
             children:[
                 {
@@ -58,7 +58,7 @@ export default new Router({
             ]
         },
         {
-            path:"/recommend",
+            path:"/music/recommend",
             component:Recommend,
             children: [
                 {
@@ -68,7 +68,7 @@ export default new Router({
             ]
         },
         {
-            path: "/user",
+            path: "/music/user",
             component:UserCenter
         }
     ]
