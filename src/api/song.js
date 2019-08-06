@@ -12,7 +12,7 @@ export function getLyrics(mid) {
         loginUin:0,
         format: 'json'
     });
-    let res = Axios.get("api/lyric",{
+    let res = Axios.get("/api/lyric",{
         params:data,
     }).then((res) => {
         return Promise.resolve(res.data);
