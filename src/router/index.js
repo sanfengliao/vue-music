@@ -14,7 +14,7 @@ const  Search = () => import("../components/search/search.vue")
 const  Singer = () => import("../components/singer/singer.vue")
 const  SingerDetail = () => import("../components/singer-detail/singer-detail.vue")
 const  TopList = () => import("../components/top-list/top-list.vue")
-const  UserCenter = import("../components/user-center/user-center.vue")
+const  UserCenter =() => import("../components/user-center/user-center.vue")
 const  Desc = () => import("../components/desc/desc.vue")
 
 Vue.use(Router)
@@ -23,12 +23,12 @@ export default new Router({
     mode: 'history',
     routes:[
         {
-            path:"/music",
-            redirect: "/music/recommend",
+            path:"/",
+            redirect: "/recommend",
 
         },
         {
-            path:"/music/rank",
+            path:"/rank",
             component: Rank,
             children:[
                 {
@@ -38,7 +38,7 @@ export default new Router({
             ]
         },
         {
-            path:"/music/singer",
+            path:"/singer",
             component:Singer,
             children:[
                 {
@@ -48,7 +48,7 @@ export default new Router({
             ]
         },
         {
-            path:"/music/search",
+            path:"/search",
             component:Search,
             children:[
                 {
@@ -58,7 +58,7 @@ export default new Router({
             ]
         },
         {
-            path:"/music/recommend",
+            path:"/recommend",
             component:Recommend,
             children: [
                 {
@@ -68,7 +68,7 @@ export default new Router({
             ]
         },
         {
-            path: "/music/user",
+            path: "/user",
             component:UserCenter
         }
     ]
